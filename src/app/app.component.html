@@ -23,13 +23,17 @@
   </div>
 </template>
 <button (click)="onSwitchTtest()">switchtest</button>
+
+<h2>UnlessDirective</h2>
+<div *dirUnless="switchtest">Conditional Text</div>
+
 <br>
 <br><br><br>
 <hr>
 <h2>*ngFor="let item of list"</h2>
 <div>
   <ul>
-    <li *ngFor="let item of items; let i = index">{{item}}(Index:{{i}})</li>
+    <li *ngFor="let item of items; let i = index">{{item}}-(Index:{{i}})</li>
   </ul>
 </div>
 <br><br><br>
@@ -43,8 +47,4 @@
   <div *ngSwitchDefault>Default</div>
 </div>
 
-<h2>UnlessDirective</h2>
-<div unlesstest="switchtest">
-  Conditional Text
-</div>
 <br><br><br><br><br><br><br><br><br><br>
